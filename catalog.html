@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Нёрдс - Магазин</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <div class="header-top">
+          <a class="logo-header">
+            <img src="#" width="" height="" alt="Логотип Нёрдс">
+          </a>
+          <nav class="main-navigation">
+            <ul>
+              <li>
+                <a href="#">Студия</a>
+              </li>
+              <li>
+                <a href="#">Клиенты</a>
+              </li>
+              <li>
+                <a class="current-page">Магазин</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="user-block">
+            <a class="cart" href="#">Корзина</a>
+          </div>
+          <h1>Магазин готовых шаблонов</h1>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <section class="filter-group">
+        <form action="#" method="post" oninput="dayscountval.value=dayscount.value">
+          <fieldset>
+            <legend>Стоимость:</legend>
+            <input type="range">
+
+          </fieldset>
+          <fieldset>
+            <legend>Сетка</legend>
+            <input type="radio" name="product-group" value="adaptive" id="adaptive-field">
+            <label for="adaptive-field">Адаптивная</label>
+            <input type="radio" name="product-group" value="fixed" id="fixed-field" checked>
+            <label for="fixed-field">Фиксированная</label>
+            <input type="radio" name="product-group" value="rubber" id="rubber-field">
+            <label for="rubber-field">Резиновая</label>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <input type="checkbox" name="slider" id="slider-field" checked>
+            <label for="slider-field">Слайдер</label>
+            <input type="checkbox" name="advantages" id="advantages-field">
+            <label for="advantages-field">Блок приемуществ</label>
+            <input type="checkbox" name="news" id="news-field" checked>
+            <label for="news-field">Новости</label>
+            <input type="checkbox" name="gallery" id="gallery-field">
+            <label for="gallery-field">Галерея</label>
+            <input type="checkbox" name="basket" id="basket-field">
+            <label for="basket-field">Корзина</label>
+            <button type="submit">Показать</button>
+          </fieldset>
+        </form>
+      </section>
+      <section class="product-range">
+        <div class="sort">
+          <span class="bold">Сортировать:</span>
+          <a class="sort-choice" href="#">По цене</a>
+          <a class="sort-choice" href="#">По типу</a>
+          <a class="sort-choice" href="#">По названию</a>
+          <a class="moving up" href="#"></a>
+          <a class="moving down" href="#"></a>
+        </div>
+        <div class="product-unit">
+          <a class="product-image" href="#"><img src="#" width="" height="" alt=""></a>
+          <a class="product-image" href="#"><img src="#" width="" height="" alt=""></a>
+          <a class="product-image" href="#"><img src="#" width="" height="" alt=""></a>
+          <a class="product-image" href="#"><img src="#" width="" height="" alt=""></a>
+          <a class="product-image" href="#"><img src="#" width="" height="" alt=""></a>
+          <a class="product-image" href="#"><img src="#" width="" height="" alt=""></a>
+        </div>
+        <div class="paginator">
+         <a class="btn-current">1</a>
+         <a class="btn pgn"  href="#">2</a>
+         <a class="btn pgn"  href="#">3</a>
+         <a class="btn-next"  href="#">Следующая</a>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="map">
+        <div class="map-wrapper">
+            <div class="map-contacts">
+                <p class="map-contacts-name">NЁRDS DESIGN STUDIO</p>
+                <p class="map-contacts-connect">350000, Краснодар,<br>
+                ул. Головатого, 100</p>
+                <p class="map-contacts-connect">тел. +7 (861) 275-75-75</p>
+                <a class="btn long" href="#">Напишите нам</a>
+            </div>
+        </div>
+      </div>
+      <div class="container">
+        <section class="footer-social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+        <section>
+          <p>Давайте дружить, это выгодно!</p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </section>
+      </div>
+    </footer>
+    <form class="contact-form" action="#" method="post">
+      <fieldset>
+        <legend>Напишите нам</legend>
+        <!-- Как правильно прописать кнопку в верху с права, которая закрывает форму??? -->
+        <div class="half-width">
+          <label for="login-field" class="contact-name">Ваше имя:</label>
+          <input type="text" name="login" id="login-field" placeholder="Представьтесь, пожалуйста" required="">
+        </div>
+        <div class="half-width">
+          <label for="email-field" class="contact-email">Ваш e-mail:</label>
+          <input type="email" name="email" id="email-field" placeholder="Для отправки ответа" required="">
+        </div>
+        <label for="text-field">Текст письма:</label>
+        <textarea name="contact-text" id="text-field" rows="4">В свободной форме</textarea>
+        <div class="contact-buttons">
+          <button class="btn form-btn" type="submit">Отправить</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
