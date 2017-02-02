@@ -1,0 +1,19 @@
+body {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  color: #283136;
+  line-height: 24px;
+  background-color: ffffff;
+}
+
+.main-header {
+  background-color: #eeeeee;
+
+}
+
+.main-footer {
+  background-image: url(/web_d/146588-nerds/img/map.jpg);
+  background-repeat: no-repeat;
+  background-size: 1440px 416px;
+}
