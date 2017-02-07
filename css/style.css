@@ -1,5 +1,5 @@
 body {
-  font-family: Roboto;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   font-weight: normal;
   color: #283136;
@@ -7,13 +7,30 @@ body {
   background-color: ffffff;
 }
 
+h1 {
+  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-size: 55px;
+  color: #000000;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  line-height: 30px;
+}
+
+.product-title {
+  font-size: 24px;
+}
+
 .main-header {
   background-color: #eeeeee;
 
 }
 
-.main-footer {
-  background-image: url(/web_d/146588-nerds/img/map.jpg);
+.map {
+  background-image: url('/web_d/146588-nerds/img/map.jpg');
   background-repeat: no-repeat;
   background-size: 1440px 416px;
 }
