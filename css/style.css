@@ -8,7 +8,8 @@ body {
 }
 
 h1 {
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
   font-size: 55px;
   color: #000000;
 }
@@ -26,11 +27,164 @@ h2 {
 
 .main-header {
   background-color: #eeeeee;
+  padding-top: 1px;
+}
+
+.container {
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.product-range-main {
+  margin: 80px 0;
+}
+
+.header-top::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.logo-header {
+  position: relative;
+  top: 49px;
+  left: 0px;
+}
+
+.main-navigation ul {
+  margin: 0;
+  margin-left: 502px;
+  padding: 0;
+}
+
+.main-navigation li {
+  display: inline-block;
+}
+
+.user-block {
+  float: right;
+}
+
+.slide-text {
+  float: left;
+  width: 310px;
+}
+
+.slide img {
+  float: right;
+}
+
+.slide::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.product-unit {
+  display: inline-block;
+  margin-right: 100px;
+}
+
+.product-unit:last-child {
+  margin-right: 0;
+}
+
+.product-description {
+  width: 300px;
+}
+
+.about-us {
+  margin: 80px 0;
+}
+
+.about-us-performed {
+  display: inline-block;
+  margin-right: 14px;
+}
+
+.about-us::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.about-us .who-we-are {
+  width: 649px;
+}
+
+.about-us .principle {
+  width: 660px;
+}
+
+.about-us .achievements {
+  display: inline-block;
+  width: 100px;
+  margin-right: 27px;
+}
+
+.our-experience {
+  display: block;
+}
+
+.partners {
+  margin: 80px 0;
+}
+
+.partners a {
+  display: inline-block;
+  width: 260px;
+}
+
+/*Стили каталога*/
+
+.filter-group {
+  float: left;
+  margin-top: 60px;
+}
+
+label {
+  display: block;
+}
+
+.product-range-catalog {
+  float: right;
+  width: 804px;
+  margin-top: 60px;
 
 }
 
+.sort {
+  margin-bottom: 38px;
+  margin-left: 40px;
+}
+
+.product-item {
+  display: inline-block;
+  margin-left: 40px;
+  margin-bottom: 37px;
+}
+
+.paginator {
+  margin: 23px 0 0 40px;
+}
+
+/*Стили каталога футера*/
+
 .map {
-  background-image: url('/web_d/146588-nerds/img/map.jpg');
+  background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
-  background-size: 1440px 416px;
+  height: 416px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: inline-block;
+  vertical-align: top;
 }
