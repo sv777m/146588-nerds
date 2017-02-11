@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+  padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   font-weight: normal;
@@ -26,8 +28,10 @@ h2 {
 }
 
 .main-header {
+  width: 1440px;
   background-color: #eeeeee;
   padding-top: 1px;
+  margin: 0 auto;
 }
 
 .container {
@@ -46,6 +50,10 @@ h2 {
   margin: 80px 0;
 }
 
+.header-top {
+  position: relative;
+}
+
 .header-top::after {
   display: table;
   content: "";
@@ -53,22 +61,26 @@ h2 {
 }
 
 .logo-header {
-  position: relative;
+  position: absolute;
   top: 49px;
-  left: 0px;
+  left: 140px;
 }
 
 .main-navigation ul {
   margin: 0;
-  margin-left: 502px;
   padding: 0;
+  margin-left: 502px;
 }
 
 .main-navigation li {
+  margin: 0;
+  padding: 0;
   display: inline-block;
 }
 
 .user-block {
+  margin: 0;
+  padding: 0;
   float: right;
 }
 
@@ -155,7 +167,7 @@ label {
 
 .product-range-catalog {
   float: right;
-  width: 804px;
+  width: 805px;
   margin-top: 60px;
 
 }
@@ -175,13 +187,15 @@ label {
   margin: 23px 0 0 40px;
 }
 
-/*Стили каталога футера*/
-
+/*Стили футера*/
+.main-footer {
+  width: 1440px;
+  margin: 0 auto;
+}
 .map {
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   height: 416px;
-  margin: 0 auto;
 }
 
 .footer-content {
