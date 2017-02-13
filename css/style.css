@@ -10,17 +10,10 @@ body {
 }
 
 h1 {
-  font-family: "Roboto", "Arial", sans-serif;
+  margin: 30px 0 60px 361px;
   font-weight: 500;
   font-size: 55px;
   color: #000000;
-}
-
-h2 {
-  font-size: 18px;
-  font-weight: bold;
-  color: #000000;
-  line-height: 30px;
 }
 
 .product-title {
@@ -28,19 +21,20 @@ h2 {
 }
 
 .main-header {
-  width: 1440px;
   background-color: #eeeeee;
-  padding-top: 1px;
   margin: 0 auto;
 }
 
 .container {
   width: 1160px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
-.container::after {
+.header-top {
+  padding-top: 1px;
+}
+
+.clearfix::after {
   display: table;
   content: "";
   clear: both;
@@ -50,26 +44,28 @@ h2 {
   margin: 80px 0;
 }
 
-.header-top {
-  position: relative;
-}
-
-.header-top::after {
-  display: table;
-  content: "";
-  clear: both;
-}
-
 .logo-header {
-  position: absolute;
-  top: 49px;
-  left: 140px;
+  float: left;
+  margin-top: 20px;
+  margin-right: 290px;
+  width: 160px;
 }
 
+.main-navigation {
+  float: left;
+}
+
+}
 .main-navigation ul {
   margin: 0;
   padding: 0;
-  margin-left: 502px;
+}
+
+.main-navigation li a {
+  display: block;
+  padding: 5px 20px;
+  padding-top: 33px;
+  text-decoration: none;
 }
 
 .main-navigation li {
@@ -79,10 +75,14 @@ h2 {
 }
 
 .user-block {
-  margin: 0;
-  padding: 0;
   float: right;
 }
+
+.user-block .cart {
+  display: block;
+  padding: 50px 10px 5px 30px;
+}
+
 
 .slide-text {
   float: left;
@@ -91,12 +91,6 @@ h2 {
 
 .slide img {
   float: right;
-}
-
-.slide::after {
-  display: table;
-  content: "";
-  clear: both;
 }
 
 .product-unit {
@@ -119,12 +113,6 @@ h2 {
 .about-us-performed {
   display: inline-block;
   margin-right: 14px;
-}
-
-.about-us::after {
-  display: table;
-  content: "";
-  clear: both;
 }
 
 .about-us .who-we-are {
@@ -159,17 +147,144 @@ h2 {
 .filter-group {
   float: left;
   margin-top: 60px;
+  width: 260px;
 }
 
-label {
+.catalog-filter-block {
+  margin-bottom: 54px;
+}
+
+.range-controls {
+  position: relative;
+  height: 80px;
+  margin-bottom: 15px;
+  padding: 0 30px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 4px;
+  height: 4px;
+  border: 8px solid white;
+  background: #ababab;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .bar {
+  margin-top: 40px;
+  width: 65%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle:hover {
+  background: #d7dcde;
+}
+
+.range-controls .max-toggle {
+  left: 145px;
+}
+
+.price-controls {
+  position: relative;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 7px 10px;
+  margin-left: 10px;
+  border: none;
+  background: #f1f1f1;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  color: #283136;
+  border-radius: 5px;
+}
+
+.max-price-absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.price-controls label {
   display: block;
+  margin-bottom: 5px;
+}
+
+fieldset {
+ border:0 none;
+ padding-left: 0;
+}
+
+input[type="radio"]+label, input[type="checkbox"]+label {
+  display: block;
+  position: relative;
+  padding: 10px 0;
+  padding-left: 40px;
+}
+
+input[type="radio"]+label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  border: 4px solid #d7dcde;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked+label:after {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 21px;
+  width: 6px;
+  height: 6px;
+  background: #d7dcde;
+  border-radius: 50%;
+}
+
+input[type="checkbox"]+label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  border: 4px solid #d7dcde;
+  border-radius: 3px;
+}
+
+input[type="checkbox"]:checked+label:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 14px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/checkbox-on.png") no-repeat 0 0;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  display: none;
 }
 
 .product-range-catalog {
   float: right;
   width: 805px;
   margin-top: 60px;
-
 }
 
 .sort {
@@ -188,17 +303,38 @@ label {
 }
 
 /*Стили футера*/
-.main-footer {
+
+.map {
+  background: url("../img/map.jpg") no-repeat 50% 0;
+  min-height: 416px;
+}
+
+.map-wrapper {
   width: 1440px;
   margin: 0 auto;
+  position: relative;
 }
-.map {
-  background-image: url("../img/map.jpg");
-  background-repeat: no-repeat;
-  height: 416px;
+
+.map .map-contacts {
+  width: 195px;
+  position: absolute;
+  top: 87px;
+  float: left;
+  background: #ffffff;
+  padding: 23px 22px;
+  margin-left: 140px;
+}
+
+.footer-social {
+  width: 260px;
+  float: left;
+}
+
+.footer-friendship {
+  float: right;
+  width: 544px;
 }
 
 .footer-content {
-  display: inline-block;
-  vertical-align: top;
+  padding: 57px 0 70px 0;
 }

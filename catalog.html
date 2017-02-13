@@ -7,8 +7,8 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
-        <div class="header-top">
+      <div class="container clearfix">
+        <div class="header-top clearfix">
           <a class="logo-header">
             <img src="img/logo.png" width="160" height="65" alt="Логотип Нёрдс">
           </a>
@@ -31,20 +31,29 @@
           <div class="user-block">
             <a class="cart" href="#">Корзина</a>
           </div>
-          <h1>Магазин готовых шаблонов</h1>
         </div>
+        <h1>Магазин готовых шаблонов</h1>
       </div>
     </header>
-    <main class="container">
+    <main class="container clearfix">
       <section class="filter-group">
         <form action="#" method="post">
+          <div class="catalog-filter-block">
+						<span class="filter-title">Стоимость:</span>
+						<div class="range-controls">
+							<div class="scale"><div class="bar"></div></div>
+							<div class="toggle min-toggle"></div>
+							<div class="toggle max-toggle"></div>
+						</div>
+						<div class="price-controls">
+							<label>от <input class="min-price" type="text" value="0"></label>
+							<div class="max-price-absolute">
+                <label>до <input class="max-price" type="text" value="15 000"></label>
+              </div>
+						</div>
+					</div>
           <fieldset>
-            <legend>Стоимость:</legend>
-            <input type="range">
-
-          </fieldset>
-          <fieldset>
-            <legend>Сетка</legend>
+            <legend><span>Сетка</span></legend>
             <input type="radio" name="product-group" value="adaptive" id="adaptive-field" checked>
             <label for="adaptive-field">Адаптивная</label>
             <input type="radio" name="product-group" value="fixed" id="fixed-field">
@@ -53,7 +62,7 @@
             <label for="rubber-field">Резиновая</label>
           </fieldset>
           <fieldset>
-            <legend>Особенности:</legend>
+            <legend><span>Особенности:</span></span></legend>
             <input type="checkbox" name="slider" id="slider-field" checked>
             <label for="slider-field">Слайдер</label>
             <input type="checkbox" name="advantages" id="advantages-field">
@@ -81,7 +90,7 @@
           <div class="product-item">
             <img class="item-image" src="img/item-sedona.jpg" width="360" height="616" alt="Эскиз Седона">
             <div class="item-action">
-                <h2 class="item-title"><a class="item-page" href="#">Sedona</a></h2>
+                <span class="item-title"><a class="item-page" href="#">Sedona</a></span>
                 <p class="item-describe">Информационный сай для туристов</p>
                 <a class="btn " title="Купить">9 900 р.</a>
             </div>
@@ -89,7 +98,7 @@
           <div class="product-item">
             <img class="item-image" src="img/item-pink-app.jpg" width="360" height="616" alt="Эскиз Pink App">
             <div class="item-action">
-                <h2 class="item-title"><a class="item-page" href="#">Pink App</a></h2>
+                <span class="item-title"><a class="item-page" href="#">Pink App</a></span>
                 <p class="item-describe">Продуктовый лендинг для iOS и Android</p>
                 <a class="btn " title="Купить">9 900 р.</a>
             </div>
@@ -97,7 +106,7 @@
           <div class="product-item">
             <img class="item-image" src="img/item-barbershop.jpg" width="360" height="616" alt="Эскиз Barbershop">
             <div class="item-action">
-                <h2 class="item-title"><a class="item-page" href="#">Borodinski</a></h2>
+                <span class="item-title"><a class="item-page" href="#">Borodinski</a></span>
                 <p class="item-describe">Стильные стрижки</p>
                 <a class="btn " title="Купить">9 900 р.</a>
             </div>
@@ -105,7 +114,7 @@
           <div class="product-item">
             <img class="item-image" src="img/item-mishka.jpg" width="360" height="616" alt="Эскиз Mishka">
             <div class="item-action">
-                <h2 class="item-title"><a class="item-page" href="#">Mishka</a></h2>
+                <span class="item-title"><a class="item-page" href="#">Mishka</a></span>
                 <p class="item-describe">Милые штучки ручной работы</p>
                 <a class="btn " title="Купить">9 900 р.</a>
             </div>
@@ -113,7 +122,7 @@
           <div class="product-item">
             <img class="item-image" src="img/item-a-plus.jpg" width="360" height="616" alt="Эскиз A plus">
             <div class="item-action">
-                <h2 class="item-title"><a class="item-page" href="#">A plus</a></h2>
+                <span class="item-title"><a class="item-page" href="#">A plus</a></span>
                 <p class="item-describe">Обучим готовых к трудоустройству</p>
                 <a class="btn " title="Купить">9 900 р.</a>
             </div>
@@ -121,7 +130,7 @@
           <div class="product-item">
             <img class="item-image" src="img/item-kvast.jpg" width="360" height="616" alt="Эскиз Кваст">
             <div class="item-action">
-                <h2 class="item-title"><a class="item-page" href="#">Кваст</a></h2>
+                <span class="item-title"><a class="item-page" href="#">Кваст</a></span>
                 <p class="item-describe">Крафтовый квас всему голова</p>
                 <a class="btn " title="Купить">9 900 р.</a>
             </div>
@@ -147,13 +156,13 @@
             </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-social footer-content">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте<img src="img/social-vk.png" width="26" height="15" alt="Кнопка вконтакте"></a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук<img src="img/social-fb.png" width="12" height="22" alt="Кнопка фейсбук"></a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм<img src="img/social-inst.png" width="21" height="21" alt="Кнопка инстаграм"></a>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
         </section>
-        <section class="be-friends footer-content">
+        <section class="footer-friendship footer-content">
           <p>Давайте дружить, это выгодно!</p>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </section>
