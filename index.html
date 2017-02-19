@@ -21,7 +21,7 @@
                 <a href="#">Клиенты</a>
               </li>
               <li>
-                <a href="#">Магазин</a>
+                <a href="catalog.html">Магазин</a>
               </li>
               <li>
                 <a href="#">Контакты</a>
@@ -42,37 +42,36 @@
             <label for="btn-3"></label>
           </div>
         </div>
-        <div class="slider-content">
-          <div class="slide clearfix">
+        <div class="slider-inner">
+          <div class="slider-slides">
+          <div class="slider-slide slide-1 clearfix">
             <div class="slide-text">
               <span class="motto">Долго, дорого, скурпулезно.</span>
               <p>
-                Математически выверенный дизайн для вашего сайта или мобильного приложения.
+                Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.
               </p>
-              <a class="btn long" href="#">Узнать больше</a>
+              <a class="btn btn-slide" href="#">Узнать больше</a>
             </div>
-            <img src="img/slide1.png" width="698" height="413" alt="">
           </div>
-          <div class="slide clearfix">
+          <div class="slider-slide slide-2 clearfix">
             <div class="slide-text">
               <span class="motto">Любим математику как никто другой</span>
               <p>
                 Никакого креатива, только математические формулы для расчета идеальных пропорций.
               </p>
-              <a class="btn long" href="#">Узнать больше</a>
+              <a class="btn btn-slide" href="#">Узнать больше</a>
             </div>
-            <img src="img/slide2.png" width="663" height="430" alt="">
           </div>
-          <div class="slide clearfix">
+          <div class="slider-slide slide-3 clearfix">
             <div class="slide-text">
               <span class="motto">Только ночь, только хардкор</span>
               <p>
                 Работаем днем, как все? Мы против этого. Ближе к полуночи работа только начинается.
               </p>
-              <a class="btn long" href="#">Узнать больше</a>
+              <a class="btn btn-slide" href="#">Узнать больше</a>
             </div>
-            <img src="img/slide3.png" width="759" height="411" alt="">
-          </div>
+                    </div>
+        </div>
         </div>
       </div>
     </header>
@@ -82,19 +81,19 @@
           <img src="img/illustration-1.jpg" width="300" height="146" alt="Картинка разработка веб-сайтов">
           <h2 class="product-title">Веб-сайты</h2>
           <p class="product-description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a class="btn buy" href="#">Заказать</a>
+          <a class="btn btn-order" href="#">Заказать</a>
         </article>
         <article class="product-unit">
           <img src="img/illustration-2.jpg" width="300" height="146" alt="Картинка разработка приложений">
           <h2 class="product-title">Приложения</h2>
           <p class="product-description">Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="btn buy" href="#">Заказать</a>
+          <a class="btn btn-order btn-green" href="#">Заказать</a>
         </article>
         <article class="product-unit">
           <img src="img/illustration-3.jpg" width="300" height="146" alt="Картинка разработка презентаций">
           <h2 class="product-title">Презентации</h2>
           <p class="product-description">Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class="btn buy" href="#">Заказать</a>
+          <a class="btn btn-order btn-yellow" href="#">Заказать</a>
         </article>
       </section>
       <section class="about-us clearfix">
@@ -111,7 +110,7 @@
             <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
-        <div class="about-us-performed">
+        <div class="about-us-achievements">
           <img src="img/nerds-illustration.png" width="360" height="208" alt="Картинка логотип креатив">
           <span class="our-experience">С 2004 года любим точность во всем:</span>
           <div class="achievements">
@@ -152,18 +151,18 @@
         <div class="map-wrapper">
             <div class="map-contacts">
                 <p class="map-contacts-name">NЁRDS DESIGN STUDIO</p>
-                <p class="map-contacts-contact">350000, Краснодар,<br>
-                ул. Головатого, 100</p>
-                <a class="map-contacts-contact" href="+78612757575">тел. +7 (861) 275-75-75</a>
-                <a class="btn long" href="#">Напишите нам</a>
+                <p class="map-contacts-contact">191186, Санкт-Петербург,<br>
+                ул. Б. Конюшенная, д. 19/8</p>
+                <a class="map-contacts-contact" href="+78122757575">тел. +7 (812) 275-75-75</a>
+                <a class="btn btn-write-us" href="#">Напишите нам</a>
             </div>
         </div>
       </div>
       <div class="container clearfix">
         <section class="footer-social footer-content">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          <a class="btn-social social-vk" href="#" alt="Вконтакте"></a>
+          <a class="btn-social social-fb" href="#" alt="ВФейсбук"></a>
+          <a class="btn-social social-inst" href="#" alt="Инстаграм"></a>
         </section>
         <section class="footer-friendship footer-content">
           <p>Давайте дружить, это выгодно!</p>
@@ -185,7 +184,7 @@
         </div>
         <label for="text-field">Текст письма:</label>
         <textarea name="contact-text" id="text-field" rows="4">В свободной форме</textarea>
-        <button  type="submit" class="btn form-btn">Отправить</button>
+        <button  type="submit" class="btn btn-form">Отправить</button>
       </fieldset>
     </form>
   </body>
